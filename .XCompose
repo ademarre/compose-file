@@ -1,0 +1,410 @@
+﻿# André DeMarre’s compose file for character input key sequences
+#
+# I prefer to use only a “small” set of compose sequences, and not to include
+# larger sequence sets, such as Xlib’s. The sequences defined here are intuitive
+# to me, and some of them conflict with sequences from other sets. I do not want
+# to make compromises to accommodate characters I am unlikely to use. It’s rare
+# that I need to type something that’s not defined here, but when it happens, I
+# prefer looking up the Unicode code point(s) to input directly over trying to
+# find it in a large collection of compose sequences.
+#
+# Sequence format:
+# <Multi_key> <key> [<key>...] : "string" [# Description]
+# <Multi_key> <apostrophe> <e> : "é" # Latin e with acute accent
+#
+# There is a little more to it. For the unabridged format, see
+# https://www.x.org/releases/current/doc/man/man5/Compose.5.xhtml
+#
+# Valid keys are...
+#   • The literal alphanumerics: 0–9, a–z, and A–Z
+#   • Names from the following list:
+#       colon, Home, End, Delete, Return, BackSpace, Tab, Up, Down, Left, Right
+#   • Names from the following list OR their literal ASCII representations:
+#       space         < >
+#       grave         <`>
+#       asciitilde    <~>
+#       exclam        <!>
+#       at            <@>
+#       numbersign    <#>
+#       dollar        <$>
+#       percent       <%>
+#       asciicircum   <^>
+#       ampersand     <&>
+#       asterisk      <*>
+#       parenleft     <(>
+#       parenright    <)>
+#       minus         <->
+#       plus          <+>
+#       equal         <=>
+#       underscore    <_>
+#       comma         <,>
+#       period        <.>
+#       less          <<>
+#       greater       <>>
+#       slash         </>
+#       question      <?>
+#       semicolon     <;>
+#       apostrophe    <'>
+#       quotedbl      <">
+#       bracketleft   <[>
+#       bracketright  <]>
+#       braceleft     <{>
+#       braceright    <}>
+#       backslash     <\>
+#       bar           <|>
+#
+# Use prefix conventions where possible, e.g. <apostrophe> <e> for é rather than
+# <e> <apostrophe>. Try to be systematic, especially within groups of related
+# sequences. Try to avoid ambiguities where it may be difficult to remember
+# which is which for lookalike symbols. Where there is potential for confusion,
+# it can help to define sequences based on the symbol names rather than their
+# resemblance to the symbols they compose. If you begin to make compromises on
+# intuitiveness or memorability, reconsider whether the conflicting symbols are
+# worth keeping.
+#
+# TODO: Hebrew
+# TODO: Cyrillic
+
+# acute accents
+<Multi_key> <apostrophe> <a> : "á" # Latin a with acute accent
+<Multi_key> <apostrophe> <A> : "Á" # Latin A with acute accent
+<Multi_key> <apostrophe> <e> : "é" # Latin e with acute accent
+<Multi_key> <apostrophe> <E> : "É" # Latin E with acute accent
+<Multi_key> <apostrophe> <i> : "í" # Latin i with acute accent
+<Multi_key> <apostrophe> <I> : "Í" # Latin I with acute accent
+<Multi_key> <apostrophe> <o> : "ó" # Latin o with acute accent
+<Multi_key> <apostrophe> <O> : "Ó" # Latin O with acute accent
+<Multi_key> <apostrophe> <u> : "ú" # Latin u with acute accent
+<Multi_key> <apostrophe> <U> : "Ú" # Latin U with acute accent
+<Multi_key> <apostrophe> <w> : "ẃ" # Latin w with acute accent
+<Multi_key> <apostrophe> <W> : "Ẃ" # Latin W with acute accent
+<Multi_key> <apostrophe> <y> : "ý" # Latin y with acute accent
+<Multi_key> <apostrophe> <Y> : "Ý" # Latin Y with acute accent
+<Multi_key> <apostrophe> <space> : "´" # acute accent
+
+# single quotation marks and apostrophe-like characters
+<Multi_key> <apostrophe> <semicolon>    : "‘" # left single quotation mark
+<Multi_key> <apostrophe> <apostrophe>   : "’" # right single quotation mark
+<Multi_key> <apostrophe> <less>         : "‹" # left single guillemet (angle/Latin/French quotation mark)
+<Multi_key> <apostrophe> <greater>      : "›" # right single guillemet (angle/Latin/French quotation mark)
+<Multi_key> <apostrophe> <comma>        : "‚" # low single quotation mark (low 9)
+<Multi_key> <apostrophe> <1>            : "′" # single prime (feet, arcminute)
+<Multi_key> <apostrophe> <2>            : "″" # double prime (inches, arcsecond)
+<Multi_key> <apostrophe> <3>            : "‴" # triple prime (ligne)
+<Multi_key> <apostrophe> <4>            : "⁗" # quadruple prime
+<Multi_key> <apostrophe> <h>            : "ʻ" # Hawaiian ʻokina
+
+# double quotation marks
+<Multi_key> <quotedbl> <semicolon>  : "“" # left double quotation mark
+<Multi_key> <quotedbl> <colon>      : "“" # left double quotation mark
+<Multi_key> <quotedbl> <apostrophe> : "”" # right double quotation mark
+<Multi_key> <quotedbl> <quotedbl>   : "”" # right double quotation mark
+<Multi_key> <quotedbl> <less>       : "«" # left guillemet (angle/Latin/French quotation mark)
+<Multi_key> <quotedbl> <greater>    : "»" # right guillemet (angle/Latin/French quotation mark)
+<Multi_key> <quotedbl> <comma>      : "„" # low double quotation mark (low 9)
+
+# diaereses
+<Multi_key> <quotedbl> <a> : "ä" # Latin a with diaeresis
+<Multi_key> <quotedbl> <A> : "Ä" # Latin A with diaeresis
+<Multi_key> <quotedbl> <e> : "ë" # Latin e with diaeresis
+<Multi_key> <quotedbl> <E> : "Ë" # Latin E with diaeresis
+<Multi_key> <quotedbl> <i> : "ï" # Latin i with diaeresis
+<Multi_key> <quotedbl> <I> : "Ï" # Latin I with diaeresis
+<Multi_key> <quotedbl> <o> : "ö" # Latin o with diaeresis
+<Multi_key> <quotedbl> <O> : "Ö" # Latin O with diaeresis
+<Multi_key> <quotedbl> <u> : "ü" # Latin u with diaeresis
+<Multi_key> <quotedbl> <U> : "Ü" # Latin U with diaeresis
+<Multi_key> <quotedbl> <w> : "ẅ" # Latin w with diaeresis
+<Multi_key> <quotedbl> <W> : "Ẅ" # Latin W with diaeresis
+<Multi_key> <quotedbl> <y> : "ÿ" # Latin y with diaeresis
+<Multi_key> <quotedbl> <Y> : "Ÿ" # Latin Y with diaeresis
+<Multi_key> <quotedbl> <space> : "¨" # diaeresis
+
+# grave accents
+<Multi_key> <grave> <a> : "à" # Latin a with grave accent
+<Multi_key> <grave> <A> : "À" # Latin A with grave accent
+<Multi_key> <grave> <e> : "è" # Latin e with grave accent
+<Multi_key> <grave> <E> : "È" # Latin E with grave accent
+<Multi_key> <grave> <i> : "ì" # Latin i with grave accent
+<Multi_key> <grave> <I> : "Ì" # Latin I with grave accent
+<Multi_key> <grave> <o> : "ò" # Latin o with grave accent
+<Multi_key> <grave> <O> : "Ò" # Latin O with grave accent
+<Multi_key> <grave> <u> : "ù" # Latin u with grave accent
+<Multi_key> <grave> <U> : "Ù" # Latin U with grave accent
+<Multi_key> <grave> <w> : "ẁ" # Latin w with grave accent
+<Multi_key> <grave> <W> : "Ẁ" # Latin W with grave accent
+<Multi_key> <grave> <y> : "ỳ" # Latin y with grave accent
+<Multi_key> <grave> <Y> : "Ỳ" # Latin Y with grave accent
+<Multi_key> <grave> <space> : "`" # grave accent, ASCII the hard way
+
+# tildes
+<Multi_key> <asciitilde> <a> : "ã" # Latin a with tilde
+<Multi_key> <asciitilde> <A> : "Ã" # Latin A with tilde
+<Multi_key> <asciitilde> <n> : "ñ" # Latin n with tilde
+<Multi_key> <asciitilde> <N> : "Ñ" # Latin N with tilde
+<Multi_key> <asciitilde> <o> : "õ" # Latin o with tilde
+<Multi_key> <asciitilde> <O> : "Õ" # Latin O with tilde
+<Multi_key> <asciitilde> <space> : "~" # tilde, ASCII the hard way
+
+# circumflexes
+<Multi_key> <asciicircum> <a> : "â" # Latin a with circumflex
+<Multi_key> <asciicircum> <A> : "Â" # Latin A with circumflex
+<Multi_key> <asciicircum> <e> : "ê" # Latin e with circumflex
+<Multi_key> <asciicircum> <E> : "Ê" # Latin E with circumflex
+<Multi_key> <asciicircum> <i> : "î" # Latin i with circumflex
+<Multi_key> <asciicircum> <I> : "Î" # Latin I with circumflex
+<Multi_key> <asciicircum> <o> : "õ" # Latin o with circumflex
+<Multi_key> <asciicircum> <O> : "Õ" # Latin O with circumflex
+<Multi_key> <asciicircum> <u> : "û" # Latin u with circumflex
+<Multi_key> <asciicircum> <U> : "Û" # Latin U with circumflex
+<Multi_key> <asciicircum> <w> : "ŵ" # Latin w with circumflex
+<Multi_key> <asciicircum> <W> : "Ŵ" # Latin W with circumflex
+<Multi_key> <asciicircum> <y> : "ŷ" # Latin y with circumflex
+<Multi_key> <asciicircum> <Y> : "Ŷ" # Latin Y with circumflex
+<Multi_key> <asciicircum> <space> : "^" # circumflex accent, ASCII the hard way
+
+# cedillas
+<Multi_key> <comma> <c> : "ç" # Latin c with cedilla
+<Multi_key> <comma> <C> : "Ç" # Latin C with cedilla
+<Multi_key> <comma> <space> : "¸" # cedilla
+
+# currencies
+<Multi_key> <dollar> <c> : "¢" # cent sign
+<Multi_key> <dollar> <l> : "£" # British pound sterling sign
+<Multi_key> <dollar> <e> : "€" # Euro sign
+<Multi_key> <dollar> <y> : "¥" # Japanese yen and Chinese yuan sign
+<Multi_key> <dollar> <b> : "₿" # Bitcoin sign
+<Multi_key> <dollar> <?> : "¤" # generic currency sign
+
+# miscellaneous terminating punctuation
+<Multi_key> <!> <!> : "¡" # inverted exclamation mark
+<Multi_key> <?> <?> : "¿" # inverted question mark
+<Multi_key> <!> <?> : "‽" # interrobang mark
+<Multi_key> <?> <!> : "⸘" # inverted interrobang mark
+
+# "dashed" letters
+# Note: Don’t hesitate to use <e> <t> <h> if complications arise with <minus>.
+<Multi_key> <minus> <d>         : "ð" # Latin small eth (Icelandic)
+<Multi_key> <minus> <D>         : "Ð" # Latin capital eth (Icelandic)
+
+# hyphens, dashes, bullets, etc.
+<Multi_key> <minus> <n>         : "–" # en dash
+<Multi_key> <minus> <m>         : "—" # em dash
+<Multi_key> <minus> <asterisk>  : "•" # bullet
+<Multi_key> <minus> <period>    : "·" # interpunct
+<Multi_key> <minus> <h>         : "‐" # Unicode hyphen (rarely used)
+<Multi_key> <minus> <minus>     : "−" # minus
+
+# non-breaking characters
+<Multi_key> <n> <b> <space> : " " # non-breaking space
+<Multi_key> <n> <b> <minus> : "‑" # non-breaking hyphen
+
+# mathematical symbols
+<Multi_key> <asterisk> <asterisk>               : "×" # multiplication sign
+<Multi_key> <slash> <slash>                     : "÷" # division sign
+<Multi_key> <exclam> <equal>                    : "≠" # not equal
+<Multi_key> <less> <equal>                      : "≤" # less than or equal
+<Multi_key> <greater> <equal>                   : "≥" # greater than or equal
+<Multi_key> <minus> <asciitilde>                : "∼" # tilde operator
+<Multi_key> <asciitilde> <asciitilde>           : "≈" # almost equal (approximately)
+<Multi_key> <equal> <asciitilde>                : "≈" # almost equal (approximately)
+<Multi_key> <exclam> <asciitilde> <asciitilde>  : "≉" # not almost equal
+<Multi_key> <equal> <exclam> <asciitilde>       : "≉" # not almost equal
+<Multi_key> <asciitilde> <minus>                : "≃" # asymptotically equal
+<Multi_key> <exclam> <asciitilde> <minus>       : "≄" # not asymptotically equal
+<Multi_key> <asciitilde> <equal>                : "≅" # approximately equal (congruent)
+<Multi_key> <exclam> <asciitilde> <equal>       : "≆" # not approximately equal (not congruent)
+<Multi_key> <equal> <equal> <equal>             : "≡" # identical (identity)
+<Multi_key> <equal> <equal> <exclam>            : "≢" # not identical
+<Multi_key> <plus> <minus>                      : "±" # plus minus
+<Multi_key> <minus> <plus>                      : "∓" # minus plus
+<Multi_key> <8> <8>                             : "∞" # infinity
+<Multi_key> <i> <n> <f>                         : "∞" # infinity
+<Multi_key> <f> <o> <r> <a> <l> <l>             : "∀" # for all
+<Multi_key> <e> <x> <i> <s> <t> <s>             : "∃" # there exists
+<Multi_key> <exclam> <e> <x> <i> <s> <t> <s>    : "∄" # there does not exist
+<Multi_key> <l> <o> <g> <i> <c> <a> <n> <d>     : "∧" # logical and
+<Multi_key> <l> <o> <g> <i> <c> <o> <r>         : "∨" # logical or
+<Multi_key> <l> <o> <g> <i> <c> <n> <o> <t>     : "¬" # logical not
+<Multi_key> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴" # therefore
+<Multi_key> <b> <e> <c> <a> <u> <s> <e>         : "∵" # because
+
+# set notation
+<Multi_key> <s> <e> <t> <e> <m> <p> <t>                 : "∅" # empty set
+<Multi_key> <s> <e> <t> <u> <n> <i>                     : "∪" # set union
+<Multi_key> <s> <e> <t> <i> <n> <t>                     : "∩" # set intersection
+<Multi_key> <s> <e> <t> <e> <l> <e> <m>                 : "∈" # element of set (member of, belongs to)
+<Multi_key> <s> <e> <t> <exclam> <e> <l> <e> <m>        : "∉" # not element of set (not member of, does not belong to)
+<Multi_key> <s> <e> <t> <c> <o> <n> <t>                 : "∋" # set contains
+<Multi_key> <s> <e> <t> <exclam> <c> <o> <n> <t>        : "∌" # set does not contain
+<Multi_key> <s> <e> <t> <s> <u> <b>                     : "⊂" # subset (proper or not proper)
+<Multi_key> <s> <e> <t> <equal> <s> <u> <b>             : "⊆" # subset
+<Multi_key> <s> <e> <t> <exclam> <equal> <s> <u> <b>    : "⊊" # proper subset
+<Multi_key> <s> <e> <t> <exclam> <s> <u> <b>            : "⊄" # not subset
+<Multi_key> <s> <e> <t> <s> <u> <p>                     : "⊃" # superset (proper or not proper)
+<Multi_key> <s> <e> <t> <equal> <s> <u> <p>             : "⊇" # superset
+<Multi_key> <s> <e> <t> <exclam> <equal> <s> <u> <p>    : "⊋" # proper superset
+<Multi_key> <s> <e> <t> <exclam> <s> <u> <p>            : "⊅" # not superset
+
+# miscellaneous symbols and ligatures
+<Multi_key> <d> <e> <g>         : "°" # degree sign
+<Multi_key> <p> <a> <r>         : "¶" # paragraph sign (pilcrow)
+<Multi_key> <s> <e> <c>         : "§" # section sign
+<Multi_key> <d> <i> <a>         : "⌀" # diameter sign
+<Multi_key> <s> <s>             : "ß" # Latin small eszett (sharp s, scharfes s; German)
+<Multi_key> <S> <S>             : "ẞ" # Latin capital eszett (sharp S, scharfes S; German)
+<Multi_key> <t> <h> <o> <r> <n> : "þ" # Latin small thorn (Icelandic)
+<Multi_key> <T> <H> <O> <R> <N> : "Þ" # Latin capital thorn (Icelandic)
+<Multi_key> <parenleft> <c>     : "©" # copyright symbol
+<Multi_key> <parenleft> <r>     : "®" # registered symbol
+<Multi_key> <parenleft> <p>     : "℗" # sound recording copyright symbol
+<Multi_key> <t> <m>             : "™" # trademark symbol
+<Multi_key> <s> <m>             : "℠" # service mark symbol
+<Multi_key> <a> <e>             : "æ" # Latin ae ligature
+<Multi_key> <A> <E>             : "Æ" # Latin AE ligature
+<Multi_key> <o> <e>             : "œ" # Latin oe ligature
+<Multi_key> <O> <E>             : "Œ" # Latin OE ligature
+<Multi_key> <r> <x>             : "℞" # Rx prescription symbol
+<Multi_key> <n> <o>             : "№" # numero sign (No.)
+<Multi_key> <c> <l>             : "℄" # center line symbol
+<Multi_key> <c> <o>             : "℅" # care of
+<Multi_key> <p> <l>             : "⅊" # property line symbol
+<Multi_key> <numbersign> <numbersign> : "⌘" # looped square (place of interest)
+
+# emoticons
+<Multi_key> <s> <h> <r> <u> <g> : "¯\_(ツ)_/¯" # shrug emoticon
+
+# superscripts and subscripts
+<Multi_key> <Up> <a>            : "ª" # feminine ordinal a
+<Multi_key> <Up> <o>            : "º" # masculine ordinal o
+<Multi_key> <Up> <0>            : "⁰" # superscript 0
+<Multi_key> <Up> <1>            : "¹" # superscript 1
+<Multi_key> <Up> <2>            : "²" # superscript 2
+<Multi_key> <Up> <3>            : "³" # superscript 3
+<Multi_key> <Up> <4>            : "⁴" # superscript 4
+<Multi_key> <Up> <5>            : "⁵" # superscript 5
+<Multi_key> <Up> <6>            : "⁶" # superscript 6
+<Multi_key> <Up> <7>            : "⁷" # superscript 7
+<Multi_key> <Up> <8>            : "⁸" # superscript 8
+<Multi_key> <Up> <9>            : "⁹" # superscript 9
+<Multi_key> <Up> <i>            : "ⁱ" # superscript Latin i
+<Multi_key> <Up> <n>            : "ⁿ" # superscript Latin n
+<Multi_key> <Up> <plus>         : "⁺" # superscript plus
+<Multi_key> <Up> <minus>        : "⁻" # superscript minus
+<Multi_key> <Up> <equal>        : "⁼" # superscript minus
+<Multi_key> <Up> <parenleft>    : "⁽" # superscript left parenthesis
+<Multi_key> <Up> <parenright>   : "⁾" # superscript right parenthesis
+<Multi_key> <Down> <0>          : "₀" # subscript 0
+<Multi_key> <Down> <1>          : "₁" # subscript 1
+<Multi_key> <Down> <2>          : "₂" # subscript 2
+<Multi_key> <Down> <3>          : "₃" # subscript 3
+<Multi_key> <Down> <4>          : "₄" # subscript 4
+<Multi_key> <Down> <5>          : "₅" # subscript 5
+<Multi_key> <Down> <6>          : "₆" # subscript 6
+<Multi_key> <Down> <7>          : "₇" # subscript 7
+<Multi_key> <Down> <8>          : "₈" # subscript 8
+<Multi_key> <Down> <9>          : "₉" # subscript 9
+<Multi_key> <Down> <a>          : "ₐ" # subscript Latin a
+<Multi_key> <Down> <e>          : "ₑ" # subscript Latin e
+<Multi_key> <Down> <o>          : "ₒ" # subscript Latin o
+<Multi_key> <Down> <x>          : "ₓ" # subscript Latin x
+<Multi_key> <Down> <h>          : "ₕ" # subscript Latin h
+<Multi_key> <Down> <k>          : "ₖ" # subscript Latin k
+<Multi_key> <Down> <l>          : "ₗ" # subscript Latin l
+<Multi_key> <Down> <m>          : "ₘ" # subscript Latin m
+<Multi_key> <Down> <n>          : "ₙ" # subscript Latin n
+<Multi_key> <Down> <p>          : "ₚ" # subscript Latin p
+<Multi_key> <Down> <s>          : "ₛ" # subscript Latin s
+<Multi_key> <Down> <t>          : "ₜ" # subscript Latin t
+<Multi_key> <Down> <plus>       : "₊" # subscript plus
+<Multi_key> <Down> <minus>      : "₋" # subscript minus
+<Multi_key> <Down> <equal>      : "₌" # subscript equal
+<Multi_key> <Down> <parenleft>  : "₍" # subscript left parenthesis
+<Multi_key> <Down> <parenright> : "₎" # subscript right parenthesis
+
+# Greek
+# Note: Greek diacritics are not implemented here. My use case is to use Greek
+# letters on their own, not to type Greek text.
+<Multi_key> <g> <a>         : "α" # Greek lowercase alpha
+<Multi_key> <g> <b>         : "β" # Greek lowercase beta
+<Multi_key> <g> <g>         : "γ" # Greek lowercase gamma
+<Multi_key> <g> <d>         : "δ" # Greek lowercase delta
+<Multi_key> <g> <e> <p>     : "ε" # Greek lowercase epsilon
+<Multi_key> <g> <v>         : "ϝ" # Greek lowercase digamma (ancient)
+<Multi_key> <g> <z>         : "ζ" # Greek lowercase zeta
+<Multi_key> <g> <e> <t>     : "η" # Greek lowercase eta
+<Multi_key> <g> <t> <h>     : "θ" # Greek lowercase theta
+<Multi_key> <g> <i>         : "ι" # Greek lowercase iota
+<Multi_key> <g> <k>         : "κ" # Greek lowercase kappa
+<Multi_key> <g> <l>         : "λ" # Greek lowercase lambda
+<Multi_key> <g> <m>         : "μ" # Greek lowercase mu
+<Multi_key> <g> <n>         : "ν" # Greek lowercase nu
+<Multi_key> <g> <x>         : "ξ" # Greek lowercase xi
+<Multi_key> <g> <o> <m> <i> : "ο" # Greek lowercase omicron
+<Multi_key> <g> <p> <i>     : "π" # Greek lowercase pi
+<Multi_key> <g> <r>         : "ρ" # Greek lowercase rho
+<Multi_key> <g> <s> <1>     : "σ" # Greek lowercase sigma (medial)
+<Multi_key> <g> <s> <2>     : "ς" # Greek lowercase sigma (final)
+<Multi_key> <g> <s> <3>     : "ϲ" # Greek lowercase sigma (lunate)
+<Multi_key> <g> <t> <a>     : "τ" # Greek lowercase tau
+<Multi_key> <g> <u>         : "υ" # Greek lowercase upsilon
+<Multi_key> <g> <p> <h>     : "φ" # Greek lowercase phi
+<Multi_key> <g> <c> <h>     : "χ" # Greek lowercase chi
+<Multi_key> <g> <p> <s>     : "ψ" # Greek lowercase psi
+<Multi_key> <g> <o> <m> <e> : "ω" # Greek lowercase omega
+<Multi_key> <G> <A>         : "Α" # Greek uppercase alpha
+<Multi_key> <G> <a>         : "Α" # Greek uppercase alpha
+<Multi_key> <G> <B>         : "Β" # Greek uppercase beta
+<Multi_key> <G> <b>         : "Β" # Greek uppercase beta
+<Multi_key> <G> <G>         : "Γ" # Greek uppercase gamma
+<Multi_key> <G> <g>         : "Γ" # Greek uppercase gamma
+<Multi_key> <G> <D>         : "Δ" # Greek uppercase delta
+<Multi_key> <G> <d>         : "Δ" # Greek uppercase delta
+<Multi_key> <G> <E> <P>     : "Ε" # Greek uppercase epsilon
+<Multi_key> <G> <e> <p>     : "Ε" # Greek uppercase epsilon
+<Multi_key> <G> <V>         : "Ϝ" # Greek uppercase digamma (ancient)
+<Multi_key> <G> <v>         : "Ϝ" # Greek uppercase digamma (ancient)
+<Multi_key> <G> <Z>         : "Ζ" # Greek uppercase zeta
+<Multi_key> <G> <z>         : "Ζ" # Greek uppercase zeta
+<Multi_key> <G> <E> <T>     : "Η" # Greek uppercase eta
+<Multi_key> <G> <e> <t>     : "Η" # Greek uppercase eta
+<Multi_key> <G> <T> <H>     : "Θ" # Greek uppercase theta
+<Multi_key> <G> <t> <h>     : "Θ" # Greek uppercase theta
+<Multi_key> <G> <I>         : "Ι" # Greek uppercase iota
+<Multi_key> <G> <i>         : "Ι" # Greek uppercase iota
+<Multi_key> <G> <K>         : "Κ" # Greek uppercase kappa
+<Multi_key> <G> <k>         : "Κ" # Greek uppercase kappa
+<Multi_key> <G> <L>         : "Λ" # Greek uppercase lambda
+<Multi_key> <G> <l>         : "Λ" # Greek uppercase lambda
+<Multi_key> <G> <M>         : "Μ" # Greek uppercase mu
+<Multi_key> <G> <m>         : "Μ" # Greek uppercase mu
+<Multi_key> <G> <N>         : "Ν" # Greek uppercase nu
+<Multi_key> <G> <n>         : "Ν" # Greek uppercase nu
+<Multi_key> <G> <X>         : "Ξ" # Greek uppercase xi
+<Multi_key> <G> <x>         : "Ξ" # Greek uppercase xi
+<Multi_key> <G> <O> <M> <I> : "Ο" # Greek uppercase omicron
+<Multi_key> <G> <o> <m> <i> : "Ο" # Greek uppercase omicron
+<Multi_key> <G> <P> <I>     : "Π" # Greek uppercase pi
+<Multi_key> <G> <p> <i>     : "Π" # Greek uppercase pi
+<Multi_key> <G> <R>         : "Ρ" # Greek uppercase rho
+<Multi_key> <G> <r>         : "Ρ" # Greek uppercase rho
+<Multi_key> <G> <S> <I>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <s> <i>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <S> <1>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <s> <1>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <S> <2>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <s> <2>     : "Σ" # Greek uppercase sigma
+<Multi_key> <G> <S> <3>     : "Ϲ" # Greek uppercase sigma (lunate)
+<Multi_key> <G> <s> <3>     : "Ϲ" # Greek uppercase sigma (lunate)
+<Multi_key> <G> <T> <A>     : "Τ" # Greek uppercase tau
+<Multi_key> <G> <t> <a>     : "Τ" # Greek uppercase tau
+<Multi_key> <G> <U>         : "Υ" # Greek uppercase upsilon
+<Multi_key> <G> <u>         : "Υ" # Greek uppercase upsilon
+<Multi_key> <G> <P> <H>     : "Φ" # Greek uppercase phi
+<Multi_key> <G> <p> <h>     : "Φ" # Greek uppercase phi
+<Multi_key> <G> <C> <H>     : "Χ" # Greek uppercase chi
+<Multi_key> <G> <c> <h>     : "Χ" # Greek uppercase chi
+<Multi_key> <G> <P> <S>     : "Ψ" # Greek uppercase psi
+<Multi_key> <G> <p> <s>     : "Ψ" # Greek uppercase psi
+<Multi_key> <G> <O> <M> <E> : "Ω" # Greek uppercase omega
+<Multi_key> <G> <o> <m> <e> : "Ω" # Greek uppercase omega
