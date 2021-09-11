@@ -138,30 +138,30 @@
 <Multi_key> <grave> <space> : "`" # grave accent, ASCII the hard way
 
 # tildes
-<Multi_key> <asciitilde> <a> : "ã" # Latin a with tilde
-<Multi_key> <asciitilde> <A> : "Ã" # Latin A with tilde
-<Multi_key> <asciitilde> <n> : "ñ" # Latin n with tilde
-<Multi_key> <asciitilde> <N> : "Ñ" # Latin N with tilde
-<Multi_key> <asciitilde> <o> : "õ" # Latin o with tilde
-<Multi_key> <asciitilde> <O> : "Õ" # Latin O with tilde
-<Multi_key> <asciitilde> <space> : "~" # tilde, ASCII the hard way
+<Multi_key> <~> <a> : "ã" # Latin a with tilde
+<Multi_key> <~> <A> : "Ã" # Latin A with tilde
+<Multi_key> <~> <n> : "ñ" # Latin n with tilde
+<Multi_key> <~> <N> : "Ñ" # Latin N with tilde
+<Multi_key> <~> <o> : "õ" # Latin o with tilde
+<Multi_key> <~> <O> : "Õ" # Latin O with tilde
+<Multi_key> <~> <space> : "~" # tilde, ASCII the hard way
 
 # circumflexes
-<Multi_key> <asciicircum> <a> : "â" # Latin a with circumflex
-<Multi_key> <asciicircum> <A> : "Â" # Latin A with circumflex
-<Multi_key> <asciicircum> <e> : "ê" # Latin e with circumflex
-<Multi_key> <asciicircum> <E> : "Ê" # Latin E with circumflex
-<Multi_key> <asciicircum> <i> : "î" # Latin i with circumflex
-<Multi_key> <asciicircum> <I> : "Î" # Latin I with circumflex
-<Multi_key> <asciicircum> <o> : "õ" # Latin o with circumflex
-<Multi_key> <asciicircum> <O> : "Õ" # Latin O with circumflex
-<Multi_key> <asciicircum> <u> : "û" # Latin u with circumflex
-<Multi_key> <asciicircum> <U> : "Û" # Latin U with circumflex
-<Multi_key> <asciicircum> <w> : "ŵ" # Latin w with circumflex
-<Multi_key> <asciicircum> <W> : "Ŵ" # Latin W with circumflex
-<Multi_key> <asciicircum> <y> : "ŷ" # Latin y with circumflex
-<Multi_key> <asciicircum> <Y> : "Ŷ" # Latin Y with circumflex
-<Multi_key> <asciicircum> <space> : "^" # circumflex accent, ASCII the hard way
+<Multi_key> <^> <a> : "â" # Latin a with circumflex
+<Multi_key> <^> <A> : "Â" # Latin A with circumflex
+<Multi_key> <^> <e> : "ê" # Latin e with circumflex
+<Multi_key> <^> <E> : "Ê" # Latin E with circumflex
+<Multi_key> <^> <i> : "î" # Latin i with circumflex
+<Multi_key> <^> <I> : "Î" # Latin I with circumflex
+<Multi_key> <^> <o> : "õ" # Latin o with circumflex
+<Multi_key> <^> <O> : "Õ" # Latin O with circumflex
+<Multi_key> <^> <u> : "û" # Latin u with circumflex
+<Multi_key> <^> <U> : "Û" # Latin U with circumflex
+<Multi_key> <^> <w> : "ŵ" # Latin w with circumflex
+<Multi_key> <^> <W> : "Ŵ" # Latin W with circumflex
+<Multi_key> <^> <y> : "ŷ" # Latin y with circumflex
+<Multi_key> <^> <Y> : "Ŷ" # Latin Y with circumflex
+<Multi_key> <^> <space> : "^" # circumflex accent, ASCII the hard way
 
 # cedillas
 <Multi_key> <comma> <c> : "ç" # Latin c with cedilla
@@ -169,12 +169,12 @@
 <Multi_key> <comma> <space> : "¸" # cedilla
 
 # currencies
-<Multi_key> <dollar> <c> : "¢" # cent sign
-<Multi_key> <dollar> <l> : "£" # British pound sterling sign
-<Multi_key> <dollar> <e> : "€" # Euro sign
-<Multi_key> <dollar> <y> : "¥" # Japanese yen and Chinese yuan sign
-<Multi_key> <dollar> <b> : "₿" # Bitcoin sign
-<Multi_key> <dollar> <?> : "¤" # generic currency sign
+<Multi_key> <$> <c> : "¢" # cent sign
+<Multi_key> <$> <l> : "£" # British pound sterling sign
+<Multi_key> <$> <e> : "€" # Euro sign
+<Multi_key> <$> <y> : "¥" # Japanese yen and Chinese yuan sign
+<Multi_key> <$> <b> : "₿" # Bitcoin sign
+<Multi_key> <$> <?> : "¤" # generic currency sign
 
 # miscellaneous terminating punctuation
 <Multi_key> <!> <!> : "¡" # inverted exclamation mark
@@ -185,51 +185,51 @@
 # ellipses
 # A third non-breaking space is appended because additional punctuation might
 # follow. Delete it or replace it with a breaking space as needed.
-<Multi_key> <.> <.> <.>     : ". . . " # ellipsis with non-breaking spaces (Chicago style)
+<Multi_key>     <.> <.> <.> : ". . . " # ellipsis with non-breaking spaces (Chicago style)
 <Multi_key> <u> <.> <.> <.> : "…"      # horizontal ellipsis (not preferred)
 
-# "dashed" letters
+# “dashed” letters
 # Note: Don’t hesitate to use <e> <t> <h> if complications arise with <minus>.
-<Multi_key> <minus> <d>         : "ð" # Latin small eth (Icelandic)
-<Multi_key> <minus> <D>         : "Ð" # Latin capital eth (Icelandic)
+<Multi_key> <-> <d> : "ð" # Latin small eth (Icelandic)
+<Multi_key> <-> <D> : "Ð" # Latin capital eth (Icelandic)
 
 # hyphens, dashes, bullets, etc.
-<Multi_key> <minus> <n>         : "–" # en dash
-<Multi_key> <minus> <m>         : "—" # em dash
-<Multi_key> <minus> <asterisk>  : "•" # bullet
-<Multi_key> <minus> <period>    : "·" # interpunct
-<Multi_key> <minus> <h>         : "‐" # Unicode hyphen (rarely used)
-<Multi_key> <minus> <minus>     : "−" # minus
+<Multi_key> <-> <n> : "–" # en dash
+<Multi_key> <-> <m> : "—" # em dash
+<Multi_key> <-> <*> : "•" # bullet
+<Multi_key> <-> <.> : "·" # interpunct
+<Multi_key> <-> <h> : "‐" # Unicode hyphen (rarely used)
+<Multi_key> <-> <-> : "−" # minus
 
 # non-breaking characters
 <Multi_key> <n> <b> <space> : " " # non-breaking space
-<Multi_key> <n> <b> <minus> : "‑" # non-breaking hyphen
+<Multi_key> <n> <b> <->     : "‑" # non-breaking hyphen
 
 # mathematical symbols
-<Multi_key> <asterisk> <asterisk>               : "×" # multiplication sign
-<Multi_key> <asterisk> <.>                      : "⋅" # multiplication dot
-<Multi_key> <slash> <slash>                     : "÷" # division sign
-<Multi_key> <exclam> <equal>                    : "≠" # not equal
-<Multi_key> <less> <equal>                      : "≤" # less than or equal
-<Multi_key> <greater> <equal>                   : "≥" # greater than or equal
-<Multi_key> <minus> <asciitilde>                : "∼" # tilde operator
-<Multi_key> <asciitilde> <asciitilde>           : "≈" # almost equal (approximately)
-<Multi_key> <equal> <asciitilde>                : "≈" # almost equal (approximately)
-<Multi_key> <exclam> <asciitilde> <asciitilde>  : "≉" # not almost equal
-<Multi_key> <equal> <exclam> <asciitilde>       : "≉" # not almost equal
-<Multi_key> <asciitilde> <minus>                : "≃" # asymptotically equal
-<Multi_key> <exclam> <asciitilde> <minus>       : "≄" # not asymptotically equal
-<Multi_key> <asciitilde> <equal>                : "≅" # approximately equal (congruent)
-<Multi_key> <exclam> <asciitilde> <equal>       : "≆" # not approximately equal (not congruent)
-<Multi_key> <equal> <equal> <equal>             : "≡" # identical (identity)
-<Multi_key> <equal> <equal> <exclam>            : "≢" # not identical
-<Multi_key> <plus> <minus>                      : "±" # plus minus
-<Multi_key> <minus> <plus>                      : "∓" # minus plus
-<Multi_key> <8> <8>                             : "∞" # infinity
-<Multi_key> <i> <n> <f>                         : "∞" # infinity
+<Multi_key> <*> <*>         : "×" # multiplication sign
+<Multi_key> <*> <.>         : "⋅" # multiplication dot
+<Multi_key> </> </>         : "÷" # division sign
+<Multi_key> <!> <=>         : "≠" # not equal
+<Multi_key> <less> <=>      : "≤" # less than or equal
+<Multi_key> <greater> <=>   : "≥" # greater than or equal
+<Multi_key> <-> <~>         : "∼" # tilde operator
+<Multi_key> <=>     <~>     : "≈" # almost equal (approximately)
+<Multi_key>     <~> <~>     : "≈" # almost equal (approximately)
+<Multi_key> <!> <~> <~>     : "≉" # not almost equal
+<Multi_key> <=> <!> <~>     : "≉" # not almost equal
+<Multi_key>     <~> <->     : "≃" # asymptotically equal
+<Multi_key> <!> <~> <->     : "≄" # not asymptotically equal
+<Multi_key>     <~> <=>     : "≅" # approximately equal (congruent)
+<Multi_key> <!> <~> <=>     : "≆" # not approximately equal (not congruent)
+<Multi_key> <=> <=> <=>     : "≡" # identical (identity)
+<Multi_key> <=> <=> <!>     : "≢" # not identical
+<Multi_key> <+> <->         : "±" # plus minus
+<Multi_key> <-> <+>         : "∓" # minus plus
+<Multi_key> <8> <8>         : "∞" # infinity
+<Multi_key> <i> <n> <f>     : "∞" # infinity
 <Multi_key> <f> <o> <r> <a> <l> <l>             : "∀" # for all
-<Multi_key> <e> <x> <i> <s> <t> <s>             : "∃" # there exists
-<Multi_key> <exclam> <e> <x> <i> <s> <t> <s>    : "∄" # there does not exist
+<Multi_key>     <e> <x> <i> <s> <t> <s>         : "∃" # there exists
+<Multi_key> <!> <e> <x> <i> <s> <t> <s>         : "∄" # there does not exist
 <Multi_key> <l> <o> <g> <i> <c> <a> <n> <d>     : "∧" # logical and
 <Multi_key> <l> <o> <g> <i> <c> <o> <r>         : "∨" # logical or
 <Multi_key> <l> <o> <g> <i> <c> <n> <o> <t>     : "¬" # logical not
@@ -237,21 +237,21 @@
 <Multi_key> <b> <e> <c> <a> <u> <s> <e>         : "∵" # because
 
 # set notation
-<Multi_key> <s> <e> <t> <e> <m> <p> <t>                 : "∅" # empty set
-<Multi_key> <s> <e> <t> <u> <n> <i>                     : "∪" # set union
-<Multi_key> <s> <e> <t> <i> <n> <t>                     : "∩" # set intersection
-<Multi_key> <s> <e> <t> <e> <l> <e> <m>                 : "∈" # element of set (member of, belongs to)
-<Multi_key> <s> <e> <t> <exclam> <e> <l> <e> <m>        : "∉" # not element of set (not member of, does not belong to)
-<Multi_key> <s> <e> <t> <c> <o> <n> <t>                 : "∋" # set contains
-<Multi_key> <s> <e> <t> <exclam> <c> <o> <n> <t>        : "∌" # set does not contain
-<Multi_key> <s> <e> <t> <s> <u> <b>                     : "⊂" # subset (proper or not proper)
-<Multi_key> <s> <e> <t> <equal> <s> <u> <b>             : "⊆" # subset
-<Multi_key> <s> <e> <t> <exclam> <equal> <s> <u> <b>    : "⊊" # proper subset
-<Multi_key> <s> <e> <t> <exclam> <s> <u> <b>            : "⊄" # not subset
-<Multi_key> <s> <e> <t> <s> <u> <p>                     : "⊃" # superset (proper or not proper)
-<Multi_key> <s> <e> <t> <equal> <s> <u> <p>             : "⊇" # superset
-<Multi_key> <s> <e> <t> <exclam> <equal> <s> <u> <p>    : "⊋" # proper superset
-<Multi_key> <s> <e> <t> <exclam> <s> <u> <p>            : "⊅" # not superset
+<Multi_key> <s> <e> <t> <e> <m> <p> <t>     : "∅" # empty set
+<Multi_key> <s> <e> <t> <u> <n> <i>         : "∪" # set union
+<Multi_key> <s> <e> <t> <i> <n> <t>         : "∩" # set intersection
+<Multi_key> <s> <e> <t>     <e> <l> <e> <m> : "∈" # element of set (member of, belongs to)
+<Multi_key> <s> <e> <t> <!> <e> <l> <e> <m> : "∉" # not element of set (not member of, does not belong to)
+<Multi_key> <s> <e> <t>     <c> <o> <n> <t> : "∋" # set contains
+<Multi_key> <s> <e> <t> <!> <c> <o> <n> <t> : "∌" # set does not contain
+<Multi_key> <s> <e> <t>         <s> <u> <b> : "⊂" # subset (proper or not proper)
+<Multi_key> <s> <e> <t>     <=> <s> <u> <b> : "⊆" # subset
+<Multi_key> <s> <e> <t> <!> <=> <s> <u> <b> : "⊊" # proper subset
+<Multi_key> <s> <e> <t> <!>     <s> <u> <b> : "⊄" # not subset
+<Multi_key> <s> <e> <t>         <s> <u> <p> : "⊃" # superset (proper or not proper)
+<Multi_key> <s> <e> <t>     <=> <s> <u> <p> : "⊇" # superset
+<Multi_key> <s> <e> <t> <!> <=> <s> <u> <p> : "⊋" # proper superset
+<Multi_key> <s> <e> <t> <!>     <s> <u> <p> : "⊅" # not superset
 
 # miscellaneous symbols and ligatures
 <Multi_key> <d> <e> <g>         : "°" # degree sign
@@ -296,9 +296,9 @@
 <Multi_key> <Up> <9>            : "⁹" # superscript 9
 <Multi_key> <Up> <i>            : "ⁱ" # superscript Latin i
 <Multi_key> <Up> <n>            : "ⁿ" # superscript Latin n
-<Multi_key> <Up> <plus>         : "⁺" # superscript plus
-<Multi_key> <Up> <minus>        : "⁻" # superscript minus
-<Multi_key> <Up> <equal>        : "⁼" # superscript minus
+<Multi_key> <Up> <+>            : "⁺" # superscript plus
+<Multi_key> <Up> <->            : "⁻" # superscript minus
+<Multi_key> <Up> <=>            : "⁼" # superscript minus
 <Multi_key> <Up> <parenleft>    : "⁽" # superscript left parenthesis
 <Multi_key> <Up> <parenright>   : "⁾" # superscript right parenthesis
 <Multi_key> <Down> <0>          : "₀" # subscript 0
@@ -323,9 +323,9 @@
 <Multi_key> <Down> <p>          : "ₚ" # subscript Latin p
 <Multi_key> <Down> <s>          : "ₛ" # subscript Latin s
 <Multi_key> <Down> <t>          : "ₜ" # subscript Latin t
-<Multi_key> <Down> <plus>       : "₊" # subscript plus
-<Multi_key> <Down> <minus>      : "₋" # subscript minus
-<Multi_key> <Down> <equal>      : "₌" # subscript equal
+<Multi_key> <Down> <+>          : "₊" # subscript plus
+<Multi_key> <Down> <->          : "₋" # subscript minus
+<Multi_key> <Down> <=>          : "₌" # subscript equal
 <Multi_key> <Down> <parenleft>  : "₍" # subscript left parenthesis
 <Multi_key> <Down> <parenright> : "₎" # subscript right parenthesis
 
