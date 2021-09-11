@@ -182,6 +182,12 @@
 <Multi_key> <!> <?> : "‽" # interrobang mark
 <Multi_key> <?> <!> : "⸘" # inverted interrobang mark
 
+# ellipses
+# A third non-breaking space is appended because additional punctuation might
+# follow. Delete it or replace it with a breaking space as needed.
+<Multi_key> <.> <.> <.>     : ". . . " # ellipsis with non-breaking spaces (Chicago style)
+<Multi_key> <u> <.> <.> <.> : "…"      # horizontal ellipsis (not preferred)
+
 # "dashed" letters
 # Note: Don’t hesitate to use <e> <t> <h> if complications arise with <minus>.
 <Multi_key> <minus> <d>         : "ð" # Latin small eth (Icelandic)
