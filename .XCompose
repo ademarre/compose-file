@@ -350,6 +350,7 @@
 <Multi_key> <g> <o> <m> <i> : "ο" # Greek lowercase omicron
 <Multi_key> <g> <p> <i>     : "π" # Greek lowercase pi
 <Multi_key> <g> <r>         : "ρ" # Greek lowercase rho
+<Multi_key> <g> <s> <i>     : "σ" # Greek lowercase sigma (medial)
 <Multi_key> <g> <s> <1>     : "σ" # Greek lowercase sigma (medial)
 <Multi_key> <g> <s> <2>     : "ς" # Greek lowercase sigma (final)
 <Multi_key> <g> <s> <3>     : "ϲ" # Greek lowercase sigma (lunate)
