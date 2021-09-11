@@ -207,6 +207,7 @@
 
 # mathematical symbols
 <Multi_key> <asterisk> <asterisk>               : "×" # multiplication sign
+<Multi_key> <asterisk> <.>                      : "⋅" # multiplication dot
 <Multi_key> <slash> <slash>                     : "÷" # division sign
 <Multi_key> <exclam> <equal>                    : "≠" # not equal
 <Multi_key> <less> <equal>                      : "≤" # less than or equal
