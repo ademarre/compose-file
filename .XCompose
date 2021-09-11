@@ -253,6 +253,22 @@
 <Multi_key> <s> <e> <t> <!> <=> <s> <u> <p> : "⊋" # proper superset
 <Multi_key> <s> <e> <t> <!>     <s> <u> <p> : "⊅" # not superset
 
+# double-struck letters (number systems)
+<Multi_key> <d> <s> <C> : "ℂ" # double-struck C (set of complex numbers)
+<Multi_key> <D> <S> <C> : "ℂ" # double-struck C (set of complex numbers)
+<Multi_key> <d> <s> <H> : "ℍ" # double-struck H (set of quaternions)
+<Multi_key> <D> <S> <H> : "ℍ" # double-struck H (set of quaternions)
+<Multi_key> <d> <s> <N> : "ℕ" # double-struck N (set of natural numbers)
+<Multi_key> <D> <S> <N> : "ℕ" # double-struck N (set of natural numbers)
+<Multi_key> <d> <s> <P> : "ℙ" # double-struck P (set of prime numbers)
+<Multi_key> <D> <S> <P> : "ℙ" # double-struck P (set of prime numbers)
+<Multi_key> <d> <s> <Q> : "ℚ" # double-struck Q (set of rational numbers)
+<Multi_key> <D> <S> <Q> : "ℚ" # double-struck Q (set of rational numbers)
+<Multi_key> <d> <s> <R> : "ℝ" # double-struck R (set of real numbers)
+<Multi_key> <D> <S> <R> : "ℝ" # double-struck R (set of real numbers)
+<Multi_key> <d> <s> <Z> : "ℤ" # double-struck Z (set of integers)
+<Multi_key> <D> <S> <Z> : "ℤ" # double-struck Z (set of integers)
+
 # miscellaneous symbols and ligatures
 <Multi_key> <d> <e> <g>         : "°" # degree sign
 <Multi_key> <p> <a> <r>         : "¶" # paragraph sign (pilcrow)
