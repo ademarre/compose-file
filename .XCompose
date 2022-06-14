@@ -292,7 +292,18 @@
 <Multi_key> <c> <l>             : "℄" # center line symbol
 <Multi_key> <c> <o>             : "℅" # care of
 <Multi_key> <p> <l>             : "⅊" # property line symbol
-<Multi_key> <numbersign> <numbersign> : "⌘" # looped square (place of interest)
+<Multi_key> <numbersign> <numbersign>       : "⌘" # looped square (place of interest)
+<Multi_key> <m> <a> <r> <k>     <l> <c> <k> : "🗸" # check mark, light
+<Multi_key> <m> <a> <r> <k>         <c> <k> : "✓" # check mark
+<Multi_key> <m> <a> <r> <k>     <h> <c> <k> : "✔" # check mark, heavy
+<Multi_key> <m> <a> <r> <k> <w> <h> <c> <k> : "✅" # check mark, heavy white
+<Multi_key> <m> <a> <r> <k>         <x>     : "✗" # ballot x
+<Multi_key> <m> <a> <r> <k>     <h> <x>     : "✘" # ballot x, heavy
+<Multi_key> <b> <o> <x>             <space> : "☐" # ballot box
+<Multi_key> <b> <o> <x>             <c> <k> : "☑" # ballot box with check
+<Multi_key> <b> <o> <x>         <h> <c> <k> : "🗹" # ballot box with check, heavy
+<Multi_key> <b> <o> <x>             <x>     : "☒" # ballot box with x
+<Multi_key> <b> <o> <x>         <l> <x>     : "⮽" # ballot box with x, light
 
 # emoticons
 <Multi_key> <s> <h> <r> <u> <g> : "¯\_(ツ)_/¯" # shrug emoticon
