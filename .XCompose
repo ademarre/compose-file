@@ -9,7 +9,7 @@
 # find it in a large collection of compose sequences.
 #
 # Sequence format:
-# <Multi_key> <key> [<key>...] : "string" [# Description]
+# <Multi_key> <key> [<key>...] : "string" [# description]
 # <Multi_key> <apostrophe> <e> : "é" # Latin e with acute accent
 #
 # There is a little more to it. For the unabridged format, see
@@ -445,8 +445,8 @@
 <Multi_key> <G> <o> <m> <e> : "Ω" # Greek uppercase omega
 
 # control codes
-# Software translates these inconsistently, but it can be useful to input them
-# directly nonetheless.
+# Software translates these inconsistently; nonetheless, to input them directly
+# can be useful.
 <Multi_key> <c> <c> <c> <r> : U000D # CR carriage return
 <Multi_key> <c> <c> <l> <f> : U000A # LF line feed
 <Multi_key> <c> <c> <h> <t> : U0009 # HT horizontal tab
