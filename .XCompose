@@ -325,7 +325,7 @@
 <Multi_key> <Up> <n>            : "ⁿ" # superscript Latin n
 <Multi_key> <Up> <+>            : "⁺" # superscript plus
 <Multi_key> <Up> <->            : "⁻" # superscript minus
-<Multi_key> <Up> <=>            : "⁼" # superscript minus
+<Multi_key> <Up> <=>            : "⁼" # superscript equals
 <Multi_key> <Up> <parenleft>    : "⁽" # superscript left parenthesis
 <Multi_key> <Up> <parenright>   : "⁾" # superscript right parenthesis
 <Multi_key> <Down> <0>          : "₀" # subscript 0
@@ -352,7 +352,7 @@
 <Multi_key> <Down> <t>          : "ₜ" # subscript Latin t
 <Multi_key> <Down> <+>          : "₊" # subscript plus
 <Multi_key> <Down> <->          : "₋" # subscript minus
-<Multi_key> <Down> <=>          : "₌" # subscript equal
+<Multi_key> <Down> <=>          : "₌" # subscript equals
 <Multi_key> <Down> <parenleft>  : "₍" # subscript left parenthesis
 <Multi_key> <Down> <parenright> : "₎" # subscript right parenthesis
 
