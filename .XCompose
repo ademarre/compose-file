@@ -304,6 +304,10 @@
 <Multi_key> <b> <o> <x>         <h> <c> <k> : "🗹" # ballot box with check, heavy
 <Multi_key> <b> <o> <x>             <x>     : "☒" # ballot box with x
 <Multi_key> <b> <o> <x>         <l> <x>     : "⮽" # ballot box with x, light
+<Multi_key> <Left>  <Left>                  : "←" # leftwards arrow
+<Multi_key> <Up>    <Up>                    : "↑" # upwards arrow
+<Multi_key> <Right> <Right>                 : "→" # rightwards arrow
+<Multi_key> <Down>  <Down>                  : "↓" # downwards arrow
 
 # emoticons
 <Multi_key> <s> <h> <r> <u> <g> : "¯\_(ツ)_/¯" # shrug emoticon
