@@ -201,6 +201,24 @@
 <Multi_key> <-> <h> : "‐" # Unicode hyphen (rarely used)
 <Multi_key> <-> <-> : "−" # minus
 
+# special word and line separators
+<Multi_key> <-> <s>     : "­" # soft hyphen (SHY, syllable hyphen)
+<Multi_key> <space> <0> : "​" # zero-width space (ZWSP)
+<Multi_key> <space> </> : "⁠" # word joiner (WJ, no break)
+
+# spaces
+<Multi_key> <space> <m>     : " " # em space (mutton)
+<Multi_key> <space> <1>     : " " # em space (mutton)
+<Multi_key> <space> <n>     : " " # en space (nut)
+<Multi_key> <space> <3>     : " " # three-per-em space (third space, thick space)
+<Multi_key> <space> <4>     : " " # four-per-em space (quarter space, mid space)
+<Multi_key> <space> <6>     : " " # six-per-em space (sixth space)
+<Multi_key> <space> <t>     : " " # thin space
+<Multi_key> <space> <h>     : " " # hair space (very thin space)
+<Multi_key> <space> <f>     : " " # figure space
+<Multi_key> <space> <p>     : " " # punctuation space
+<Multi_key> <space> <space> : " " # space, ASCII the hard way
+
 # non-breaking characters
 <Multi_key> <n> <b> <space> : " " # non-breaking space
 <Multi_key> <n> <b> <->     : "‑" # non-breaking hyphen
