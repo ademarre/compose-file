@@ -84,7 +84,9 @@
 
 # single quotation marks and apostrophe-like characters
 <Multi_key> <apostrophe> <semicolon>    : "‘" # left single quotation mark
+<Multi_key> <apostrophe> <Left>         : "‘" # left single quotation mark
 <Multi_key> <apostrophe> <apostrophe>   : "’" # right single quotation mark
+<Multi_key> <apostrophe> <Right>        : "’" # right single quotation mark
 <Multi_key> <apostrophe> <less>         : "‹" # left single guillemet (angle/Latin/French quotation mark)
 <Multi_key> <apostrophe> <greater>      : "›" # right single guillemet (angle/Latin/French quotation mark)
 <Multi_key> <apostrophe> <comma>        : "‚" # low single quotation mark (low 9)
@@ -97,8 +99,10 @@
 # double quotation marks
 <Multi_key> <quotedbl> <semicolon>  : "“" # left double quotation mark
 <Multi_key> <quotedbl> <colon>      : "“" # left double quotation mark
+<Multi_key> <quotedbl> <Left>       : "“" # left double quotation mark
 <Multi_key> <quotedbl> <apostrophe> : "”" # right double quotation mark
 <Multi_key> <quotedbl> <quotedbl>   : "”" # right double quotation mark
+<Multi_key> <quotedbl> <Right>      : "”" # right double quotation mark
 <Multi_key> <quotedbl> <less>       : "«" # left guillemet (angle/Latin/French quotation mark)
 <Multi_key> <quotedbl> <greater>    : "»" # right guillemet (angle/Latin/French quotation mark)
 <Multi_key> <quotedbl> <comma>      : "„" # low double quotation mark (low 9)
