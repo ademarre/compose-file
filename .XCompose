@@ -157,8 +157,8 @@
 <Multi_key> <^> <E> : "Ê" # Latin E with circumflex
 <Multi_key> <^> <i> : "î" # Latin i with circumflex
 <Multi_key> <^> <I> : "Î" # Latin I with circumflex
-<Multi_key> <^> <o> : "õ" # Latin o with circumflex
-<Multi_key> <^> <O> : "Õ" # Latin O with circumflex
+<Multi_key> <^> <o> : "ô" # Latin o with circumflex
+<Multi_key> <^> <O> : "Ô" # Latin O with circumflex
 <Multi_key> <^> <u> : "û" # Latin u with circumflex
 <Multi_key> <^> <U> : "Û" # Latin U with circumflex
 <Multi_key> <^> <w> : "ŵ" # Latin w with circumflex
